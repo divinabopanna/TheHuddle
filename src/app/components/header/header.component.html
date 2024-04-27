@@ -1,0 +1,61 @@
+<div class="fixed-top navbar navbar-light bg-light border-bottom py-0">
+    <div class="d-flex justify-content-center py-3">  
+      <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <button class="navbar-toggler px-2 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        (click)="menuModal.show()">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <span class="mr-1 mt-1 d-none d-md-block d-lg-block d-sm-none">
+          <img src="./assets/images/conga.png" alt="" srcset="" height="24">
+        </span>
+        <span class="sf-label mb-0 d-lg-block d-md-block d-sm-none d-none">{{storefront?.Name}}</span>
+        <span class="sf-label m-0 d-lg-none d-md-none d-sm-block d-block">
+          {{storefront?.Name}}
+        </span>
+       </div>
+    </div>
+    <div class="actions d-flex align-items-center m-0">
+<ul class="nav nav-pills">
+    <li class="nav-item"><a href="#" class="nav-link" [routerLink]="['/home']"  [routerLinkActive]="'active'" aria-current="page">{{app.HOME}}</a></li>
+    <li class="nav-item"><a href="#" class="nav-link" [routerLink]="['/aboutUs']"  [routerLinkActive]="'active'">{{app.ABOUT_US}}</a></li>
+    <li class="nav-item"><div class="dropdown">
+      <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{app.OUR_SERVICES}}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" [routerLink]="['/e-commerce-management']" [routerLinkActive]="'active'">{{app.DROPDOWN_MENU.ECOMMERCE_MANGEMENT}}</a>
+        <a class="dropdown-item" [routerLink]="['/compliance']" [routerLinkActive]="'active'">{{app.DROPDOWN_MENU.COMPLIANCE}}</a>
+        <a class="dropdown-item" [routerLink]="['/designing']" [routerLinkActive]="'active'">{{app.DROPDOWN_MENU.DESIGNING}}</a>
+        <a class="dropdown-item" [routerLink]="['/social-media']" [routerLinkActive]="'active'">{{app.DROPDOWN_MENU.SOCIAL_MEDIA_MARKETING}}</a>
+        <a class="dropdown-item" [routerLink]="['/technical-services']" [routerLinkActive]="'active'">{{app.DROPDOWN_MENU.TECHNICAL_SERVICES}}</a>
+      </div>
+    </div></li>
+    <li class="nav-item"><a href="#" class="nav-link" [routerLink]="['/contactUs']"  [routerLinkActive]="'active'">{{app.CONTACT_US}}</a></li>
+</ul>
+</div>
+</div>
+
+  
+ <div bsModal #menuModal="bs-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="dialog-sizes-name1">
+    <div class="modal-dialog modal-lg menu">
+      <div class="modal-content bg-white py-1">
+        <div class="modal-header d-block p-0">
+          <div class="list-group list-group-flush">
+            <a href="javascript:void(0)" [routerLink]="['/']" (click)="menuModal.hide()" 
+              class="list-group-item list-group-item-action border-0">
+              <i class="fas fa-home mr-4"></i>{{app.HOME}}
+            </a>
+            <a href="javascript:void(0)" [routerLink]="['/aboutUs']" (click)="menuModal.hide()" 
+              class="list-group-item list-group-item-action border-0">
+              <i class="fas fa-home mr-4"></i>{{app.ABOUT_US}}
+            </a>
+            <a href="javascript:void(0)" (click)="menuModal.hide()" [routerLink]="['contactUs']"
+              class="list-group-item list-group-item-action border-0">
+              <i class="fas fa-home mr-4"></i>{{app.CONTACT_US}}
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>

@@ -33,7 +33,23 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
+            "allowedCommonJsDependencies": [
+              "locale-currency",
+              "class-transformer",
+              "lodash-decorators",
+              "chart.js",
+              "currency-codes",
+              "xml-js",
+              "bezier-easing",
+              "raven-js",
+              "lodash",
+              "moment"
+            ]
           },
           "configurations": {
             "production": {

@@ -1,0 +1,23 @@
+:host {
+    display: block;
+}
+.carousel {
+    margin-bottom: 4rem;
+    min-height: 320px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    max-width: 35%;
+    left: inherit;
+}
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    overflow-x: hidden;
+}
+.carousel-item > img {
+    height: 100%;
+    overflow-y: hidden;
+    width: 100%;
+}
