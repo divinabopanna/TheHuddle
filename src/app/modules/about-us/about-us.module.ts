@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { AboutUsRoutingModule } from './about-us-routing.module';
 import { AboutUsComponent } from './layout/about-us/about-us.component';
 
-
 @NgModule({
   declarations: [
     AboutUsComponent
@@ -12,6 +11,7 @@ import { AboutUsComponent } from './layout/about-us/about-us.component';
   imports: [
     CommonModule,
     AboutUsRoutingModule
-  ]
+  ],
+  exports: [AboutUsComponent]
 })
 export class AboutUsModule { }

@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SocialMediaComponent } from './layout/social-media/social-media.component';
+import { PerformanceMarketingComponent } from './layout/performance-marketing.component';
 
 const routes: Routes = [{
   path: '',
-  component:SocialMediaComponent,
+  component:PerformanceMarketingComponent,
 }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class SocialMediaRoutingModule { }
+export class PerformanceMarketingRoutingModule { }

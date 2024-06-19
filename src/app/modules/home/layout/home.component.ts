@@ -1,6 +1,7 @@
 import { Component, HostBinding, Input, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { DomSanitizer, SafeStyle, Title } from '@angular/platform-browser';
 import { CarouselComponent } from 'ngx-bootstrap/carousel';
+import { APP_Links } from '../../../app.constants';
 
 @Component({
   selector: 'app-home',
@@ -20,7 +21,11 @@ export class HomeComponent implements OnInit {
    */
   @Input() imagePosition: 'left' | 'center' | 'right'='center';
 
+  app: any
 
+  constructor() {
+    this.app = APP_Links;
+  }
   ngOnInit(): void {
 
   }

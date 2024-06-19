@@ -6,8 +6,8 @@ export const APP_Links = {
     DROPDOWN_MENU:{
         ECOMMERCE_MANGEMENT:"E-Commerce Management",
         COMPLIANCE:"Compliance",
-        DESIGNING:"Designing",
-        SOCIAL_MEDIA_MARKETING:"Social Media Marketing",
-        TECHNICAL_SERVICES:"Technical Services"
+        DESIGNING:"Design and development",
+        DIGITAL_MARKETING:"Digital Marketing",
+        PERFORMANCE_MARKETING:"Performance Marketing"
     }
 }

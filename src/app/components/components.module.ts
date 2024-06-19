@@ -6,6 +6,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { RouterModule } from '@angular/router';
 
 
+
 @NgModule({
   declarations: [
     HeaderComponent
@@ -17,7 +18,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     ModalModule.forRoot(),
     TooltipModule.forRoot(),
-    RouterModule
+    RouterModule,
   ]
 })
 export class ComponentsModule { }

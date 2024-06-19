@@ -33,12 +33,12 @@ const routes: Routes =[
         loadChildren: () => import('./modules/designing/designing.module').then(m => m.DesigningModule),
       },
       {
-        path: 'social-media',
-        loadChildren: () => import('./modules/social-media/social-media.module').then(m => m.SocialMediaModule),
+        path: 'performance-marketing',
+        loadChildren: () => import('./modules/performance-marketing/performance-marketing.module').then(m => m.PerformanceMarketingModule),
       },
       {
-        path: 'technical-services',
-        loadChildren: () => import('./modules/technical-services/technical-services.module').then(m => m.TechnicalServicesModule),
+        path: 'digital-marketing',
+        loadChildren: () => import('./modules/digital-marketing/digital-marketing.module').then(m => m.DigitalMarketingModule),
       },
       {
         path: 'contactUs',

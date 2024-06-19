@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TechnicalServicesComponent } from './layout/technical-services.component';
+import { DigitalMarketingComponent } from './layout/digital-marketing.component';
 
 const routes: Routes = [{
   path: '',
-  component:TechnicalServicesComponent
+  component:DigitalMarketingComponent
 }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class TechnicalServicesRoutingModule { }
+export class DigitalMarketingRoutingModule { }
