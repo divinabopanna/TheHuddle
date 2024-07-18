@@ -1,5 +1,10 @@
 @import "variable";
 
+#logoTitle{
+  width:fit-content;
+  height: fit-content;
+  max-height: 150px;
+}
 @keyframes slide {
   from {
     top: $navbar-brand-height;
@@ -20,7 +25,7 @@
     position: fixed;
     animation-name: slide;
     animation-duration: 0.2s;
-    background-color: $light;
+    background-color: $white;
   }
   &.expand {
     top: calc(#{$navbar-brand-height} + 35px);

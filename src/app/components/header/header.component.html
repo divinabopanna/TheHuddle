@@ -1,4 +1,17 @@
-<div class="fixed-top navbar navbar-light bg-white py-0">
+<div class="d-flex justify-content-start py-3">
+  <span class="mr-1 mt-1 d-none d-md-block d-lg-block d-sm-none">
+    <img src="./assets/images/huddleLogo.png" alt="" srcset="" height="24">
+  </span>
+  <h4 class="sf-label mb-0 pt-1 pl-1 d-lg-block d-md-block d-sm-none d-none">{{storefront?.Name}}</h4>
+  <h4 class="sf-label m-0 pt-1 pl-1 d-lg-none d-md-none d-sm-block d-block">
+    {{storefront?.Name}}
+  </h4>
+</div>
+
+
+
+
+<!-- <div class="fixed-top navbar navbar-light bg-white py-0">
     <div class="d-flex justify-content-center py-3">  
       <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <button class="navbar-toggler px-2 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -14,6 +27,8 @@
         </h4>
        </div>
     </div>
+</div> -->
+
     <!-- <div class="actions d-flex align-items-center m-0">
       <ul class="nav nav-pills">
           <li class="nav-item"><a href="#" class="nav-link" [routerLink]="['/home']"  [routerLinkActive]="'active'" aria-current="page">{{app.HOME}}</a></li>
@@ -33,10 +48,9 @@
           <li class="nav-item"><a href="#" class="nav-link" [routerLink]="['/contactUs']"  [routerLinkActive]="'active'">{{app.CONTACT_US}}</a></li> 
       </ul> 
     </div> -->
-</div>
 
   
- <div bsModal #menuModal="bs-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="dialog-sizes-name1">
+ <!-- <div bsModal #menuModal="bs-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="dialog-sizes-name1">
     <div class="modal-dialog modal-lg menu">
       <div class="modal-content bg-white py-1">
         <div class="modal-header d-block p-0">
@@ -58,4 +72,4 @@
 
       </div>
     </div>
-  </div>
+  </div> -->

@@ -3,7 +3,12 @@
 }
 .carousel {
     margin-bottom: 2rem;
-    min-height: 320px;
+    min-height: 100%;
+}
+
+#contactUs{
+    margin-top: 13rem;
+    margin-bottom: 13rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {

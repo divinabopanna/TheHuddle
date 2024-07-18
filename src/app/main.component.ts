@@ -3,7 +3,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-main',
   template: `
-    <app-header></app-header>
+    <app-home></app-home>
     <main>
       <router-outlet></router-outlet>
     </main>
